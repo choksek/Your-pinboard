@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<title>Board</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>Elementary, my dear Watson!</h1>
+
+<a href="index.html">← Back</a>
+
+<br><br>
+
+<div id="toolbar">  
+
+<button onclick="addTextCard()">Add Text Card</button>
+
+<button onclick="addTodoCard()">Add Todo Card</button>
+
+Board W:
+
+<input id="boardWidth" value="1000" style="width:70px">
+
+Board H:
+
+<input id="boardHeight" value="700" style="width:70px">
+
+<button onclick="resizeBoard()">Set Size</button>
+
+<button onclick="zoomIn()">+</button>
+
+<button onclick="zoomOut()">-</button>
+
+<input id="searchBox" placeholder="Search cards..." />
+
+</div>
+
+<br><br>
+
+<div id="boardContainer">
+
+<div id="board"></div>
+
+</div>
+
+<script src="board.js"></script>
+
+<div id="quoteBubble">
+
+<div id="quoteText"></div>
+
+<div id="quoteControls">
+
+<button onclick="editQuotes()">⚙</button>
+
+</div>
+
+</div>
+
+<script src="quotes.js"></script>
+
+</body>
+
+</html>
